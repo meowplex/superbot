@@ -6,19 +6,19 @@
   "repository": "https://github.com/meowplex/superbot",
   "contributors": [
     {
-      "name"  : "Eduard Baturin",
-      "email" : "trardone@gmail.com",
-      "url"   : "http://github.com/Trard"
+      "name": "Eduard Baturin",
+      "email": "trardone@gmail.com",
+      "url": "http://github.com/Trard"
     },
     {
-      "name" : "Timofey Ulyanov",
+      "name": "Timofey Ulyanov",
       "email": "kuthon@vk.com",
-      "url"  : "https://kuthon.ru"
+      "url": "https://kuthon.ru"
     },
     {
-      "name" : "Timofey Gelazoniya",
+      "name": "Timofey Gelazoniya",
       "email": "contact@zeldon.ru",
-      "url"  : "https://zeldon.ru"
+      "url": "https://zeldon.ru"
     }
   ],
   "license": "MIT",
@@ -32,6 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "mongoose": "^6.0.7"
   }
 }
