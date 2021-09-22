@@ -16,17 +16,17 @@ export class CachingService {
      */
     count;
 
-    constructor(limit){
-        limit = limit;
-        count = 0;
-        cache = new Collection()
+    constructor(limit) {
+        this.limit = limit;
+        this.count = 0;
+        this.cache = new Collection()
     }
 
     /**
      * @param {String} key 
      * @returns value for the key
      */
-    get(key){
+    get(key) {
         return this.cache.get(key);
     }
 
@@ -34,11 +34,11 @@ export class CachingService {
      * @param {String} key 
      * @param {JSON} value 
      */
-    set(key, value){
-        count+=1;
-        if (count >= limit){
+    set(key, value) {
+        this.count += 1;
+        if (this.count >= this.limit) {
             this.cache.delete(this.cache.lastKey());
-            count-=1;
+            this.count -= 1;
         }
         this.cache.set(key, value);
     }
@@ -47,7 +47,7 @@ export class CachingService {
      * @param {String} key 
      * @returns boolean - is there an element with a this key 
      */
-    has(key){
+    has(key) {
         return this.cache.has(key)
     }
 }
