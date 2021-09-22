@@ -1,0 +1,10 @@
+{
+  "name": "superbot",
+  "version": "0.0.1",
+  "description": "bot that works on all platforms, in all social networks and messengers",
+  "main": "src/index.js",
+  "repository": "https://github.com/orgs/meowplex/repositories",
+  "author": "meowplex",
+  "license": "MIT",
+  "private": true
+}
