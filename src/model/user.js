@@ -4,7 +4,7 @@ export class User {
     username;
 
     /**
-     * @param {int} id 
+     * @param {Number} id 
      * @param {String} username 
      */
     constructor(id, username) {

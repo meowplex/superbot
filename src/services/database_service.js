@@ -1,18 +1,36 @@
-import { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 
-const mongoose = new Mongoose();
+const usersSchema = new mongoose.Schema({
+    id: Number,
+    username: String
+});
 
-mongoose.connect();
+const UserModel = mongoose.model('User', usersSchema)
 
 export class Database {
-    mongoose;
 
-    constructor(mongoose){
-        this.mongoose = mongoose;
+    constructor() {
+        if (mongoose.connection.readyState != 1)
+            throw Exception("mongoose dont connected")
     }
 
-    get(key){
-        return mongoose.model().find(key)
+    async get(params) {
+        const response = await UserModel.findOne(params);
+        return response;
     }
+
+    async create(params) {
+        const newUser = new UserModel(params);
+        await newUser.save();
+        return newUser;
+    }
+
+    async update(oldParams, newParams) {
+        const response = await UserModel.updateOne(oldParams, newParams);
+        return response;
+    }
+
 }
+
+
 
