@@ -3,8 +3,24 @@
   "version": "0.0.1",
   "description": "bot that works on all platforms, in all social networks and messengers",
   "main": "src/index.js",
-  "repository": "https://github.com/orgs/meowplex/repositories",
-  "author": "meowplex",
+  "repository": "https://github.com/meowplex/superbot",
+  "contributors": [
+    {
+      "name"  : "Eduard Baturin",
+      "email" : "trardone@gmail.com",
+      "url"   : "http://github.com/Trard"
+    },
+    {
+      "name" : "Timofey Ulyanov",
+      "email": "kuthon@vk.com",
+      "url"  : "https://kuthon.ru"
+    },
+    {
+      "name" : "Timofey Gelazoniya",
+      "email": "contact@zeldon.ru",
+      "url"  : "https://zeldon.ru"
+    }
+  ],
   "license": "MIT",
   "private": true,
   "type": "module",
