@@ -6,5 +6,13 @@
   "repository": "https://github.com/orgs/meowplex/repositories",
   "author": "meowplex",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "jest": "^27.2.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }
