@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "bot that works on all platforms, in all social networks and messengers",
   "main": "src/index.js",
-  "repository": "https://github.com/orgs/meowplex/repositories",
+  "repository": "https://github.com/meowplex/superbot",
   "contributors": [
     {
       "name"  : "Eduard Baturin",
