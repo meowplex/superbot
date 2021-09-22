@@ -1,10 +1,10 @@
-import { Collection } from "../model/collection";
+import { Collection } from "../model/collection.js";
 
 export class CachingService {
     /**
      * Mab object that stores the objects
      */
-    cache = new Collection();
+    cache;
 
     /**
      * Limit on the number of stored objects 
@@ -14,10 +14,12 @@ export class CachingService {
     /**
      * The current number of stored objects 
      */
-    count = 0;
+    count;
 
     constructor(limit){
         limit = limit;
+        count = 0;
+        cache = new Collection()
     }
 
     /**
@@ -48,6 +50,4 @@ export class CachingService {
     has(key){
         return this.cache.has(key)
     }
-
-
 }

@@ -1,7 +1,6 @@
 export class Collection extends Map {
 
     /**
-     * 
      * @returns the first key(s) in this collection.
      */
 
@@ -10,7 +9,6 @@ export class Collection extends Map {
     }
 
     /**
-     * 
      * @returns the last key(s) in this collection.
      */
     lastKey(){
