@@ -14,4 +14,4 @@ service.set('key4', 'value4');
 
 console.log(`Now, first element is null : ${service.get('key1') == null} (expected true)`);
 
-console.log(`count == length: ${service.cache.values.length == service.count} (expected true)`);
+console.log(`count == length: ${service.cache.values().length == service.count} (expected true)`);
