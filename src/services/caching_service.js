@@ -37,7 +37,7 @@ export class CachingService {
     set(key, value) {
         this.count += 1;
         if (this.count >= this.limit) {
-            this.cache.delete(this.cache.lastKey());
+            this.cache.delete(this.cache.firstKey());
             this.count -= 1;
         }
         this.cache.set(key, value);
