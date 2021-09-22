@@ -35,7 +35,7 @@ export class CachingService {
      * @param {JSON} value 
      */
     set(key, value) {
-        if (this.cache.has(key) == false){
+        if (this.cache.has(key) == false) {
             this.count += 1;
         }
         if (this.count > this.limit) {

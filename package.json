@@ -30,5 +30,8 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "dependencies": {
+    "mongoose": "^6.0.7"
   }
 }

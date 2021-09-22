@@ -4,10 +4,10 @@ export class User {
     username;
 
     /**
-     * @param {int} id 
+     * @param {Number} id 
      * @param {String} username 
      */
-    constructor(id, username){
+    constructor(id, username) {
         this.id = id;
         this.username = username;
     }
@@ -16,7 +16,7 @@ export class User {
      * @param {JSON} object 
      * @returns User object
      */
-    static fromJSON(object){
+    static fromJSON(object) {
         return new User(object.id, object.username);
     }
 
