@@ -1,5 +1,5 @@
 import { I18n } from "i18n";
-import { fileURLToPath } from "url";
+import { fileURLToPath } from 'url';
 import path, { dirname } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
