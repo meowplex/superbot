@@ -1,8 +1,5 @@
 export class User {
 
-    id;
-    username;
-
     /**
      * @param {Number} id 
      * @param {String} username 
