@@ -8,7 +8,7 @@ test('database test', async () => {
         id: 1,
         username: 'Nick'
     })
-    const user1 = await db.get({id: 1});
+    const user1 = await db.get({ id: 1 });
     await mongoose.disconnect();
     expect(user.username).toBe(user1.username);
 });

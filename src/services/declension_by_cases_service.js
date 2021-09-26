@@ -1,6 +1,5 @@
 export class DeclensionByCases {
 
-
     /**
      * 
      * @param {Number} numeral 

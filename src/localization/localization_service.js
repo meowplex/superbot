@@ -19,9 +19,9 @@ ru.setLocale('ru')
 
 export class LocalizationService {
 
-    constructor(locale){
-        switch (locale){
-            case ('ru'):{
+    constructor(locale) {
+        switch (locale) {
+            case ('ru'): {
                 this.i18n = ru;
                 break;
             }
@@ -32,8 +32,8 @@ export class LocalizationService {
         }
     }
 
-    get(phrase, count){
+    get(phrase, count) {
         return this.i18n.__n(phrase, count);
     }
-    
+
 }

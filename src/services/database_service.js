@@ -11,7 +11,7 @@ export class Database {
 
     constructor() {
         if (mongoose.connection.readyState != 1)
-            throw Exception("mongoose dont connected")
+            throw new Error("mongoose dont connected")
     }
 
     /**

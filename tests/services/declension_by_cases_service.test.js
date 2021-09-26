@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { DeclensionByCases } from "../../src/services/declension_by_cases_service.js";
 
 test('DeclensionByCases', () => {
