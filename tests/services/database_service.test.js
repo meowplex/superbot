@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
-import { Database } from '../../src/services/database_service';
+import { MongoAdapter } from '../../src/services/mongo_adapter';
 
 test('database test', async () => {
     await mongoose.connect('mongodb://localhost:27017/superbot-test')
-    const db = new Database();
+    const db = new MongoAdapter();
     const user = await db.create({
         id: 1,
         username: 'Nick'

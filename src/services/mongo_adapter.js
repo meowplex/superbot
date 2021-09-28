@@ -1,17 +1,12 @@
 import mongoose from "mongoose";
 
-const usersSchema = new mongoose.Schema({
-    id: Number,
-    username: String
-});
+export class MongoAdapter {
 
-const UserModel = mongoose.model('User', usersSchema)
-
-export class Database {
-
-    constructor() {
-        if (mongoose.connection.readyState != 1)
+    constructor(mongoseModel) {
+        if (mongoose.connection.readyState != 1) {
             throw new Error("mongoose dont connected")
+        }
+        this.model = mongoseModel;
     }
 
     /**
@@ -20,7 +15,7 @@ export class Database {
      * @returns Database entry with these parameters 
      */
     async get(params) {
-        const response = await UserModel.findOne(params);
+        const response = await this.model.findOne(params);
         return response;
     }
 
@@ -30,9 +25,8 @@ export class Database {
      * @returns The created entry in the database
      */
     async create(params) {
-        const newUser = new UserModel(params);
-        await newUser.save();
-        return newUser;
+        const response = await this.model.create(params);
+        return response;
     }
 
     /**
