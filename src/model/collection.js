@@ -3,7 +3,6 @@ export class Collection extends Map {
     /**
      * @returns the first key(s) in this collection.
      */
-
     firstKey() {
         return this.keys().next().value;
     }
