@@ -1,3 +1,3 @@
-export class Commands {
+export class Triggers {
     static hello = "/HelloCommand"
 }
