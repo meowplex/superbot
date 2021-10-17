@@ -1,0 +1,21 @@
+{
+  "name": "vk-bot-starter",
+  "version": "1.0.1",
+  "description": "A basic starter for an vk bot",
+  "main": "src/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Timofey (xzeldon)",
+    "email": "contact@zeldon.ru",
+    "url": "https://zeldon.ru"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@vk-io/hear": "^1.1.0",
+    "dotenv-safe": "^8.2.0",
+    "vk-io": "^4.3.2"
+  }
+}
