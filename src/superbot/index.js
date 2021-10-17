@@ -1,9 +1,9 @@
 import { SuperBot } from "../../lib/superbot/index.js"
 import { CommandNames } from "../../utils/command_names.js";
-import { get_hello_action } from "./actions/hello.js"
-import { get_logger_action } from "./actions/logger.js"
+import { hello_command } from "./commands/hello.js"
+import { logger_middleware } from "./middlewares/logger.js"
 
 export const superBot = new SuperBot()
 
-superBot.use(get_logger_action())
-superBot.on(CommandNames.hello, get_hello_action())
+superBot.use(logger_middleware)
+superBot.on(CommandNames.hello, hello_command)
