@@ -1,7 +1,5 @@
-import { superBot } from "../index.js";
-
-export function setup_logger(){
-    superBot.use((context) => {
+export function get_logger_command(){
+    return (context) => {
         console.log(`New message from ${context.messengerId}`)
-    })
+    }
 }
