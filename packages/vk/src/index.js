@@ -8,11 +8,8 @@ export const vkBot = new VK({
 
 export const hearManager = new HearManager();
 
-export function startVkBot()
-{
-    // middlewares
+export function start_vk_bot() {
     vkBot.updates.on('message', hearManager.middleware);
-    // commands
     hearManager.hear(/^(?:hello|привет)$/i, get_hello_action())
 
     // start polling
