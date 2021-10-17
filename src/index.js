@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import { startVkBot } from "./vk/src/index.js";
+import { startVkBot } from "./vk/index.js";
 
 const main = async () => {
     // connect to db

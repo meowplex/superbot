@@ -1,7 +1,7 @@
-import { Context } from "../../../../lib/superbot/index.js";
-import { superBot } from "../../../superbot/index.js";
-import { Triggers } from "../../../../utils/triggers.js";
-import { Messengers } from "../../../../utils/messengers.js";
+import { Context } from "../../../lib/superbot/index.js";
+import { superBot } from "../../superbot/index.js";
+import { Triggers } from "../../../utils/triggers.js";
+import { Messengers } from "../../../utils/messengers.js";
 
 export function get_hello_action()
 {
