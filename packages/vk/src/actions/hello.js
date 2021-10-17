@@ -7,8 +7,8 @@ export function get_hello_action()
 {
     return async (ctx) =>
     {
-        ctx = new Context(Messengers.vk, ctx)
-        let res = await super_bot.run(Command_names.hello, ctx)
-        return context.send(`${res.text}, VK`);
+        let cctx = new Context(Messengers.vk, ctx.senderId)
+        let res = await super_bot.run(Command_names.hello, cctx)
+        return ctx.send(`${res.text}, VK`);
     };
 }
