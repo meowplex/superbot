@@ -1,4 +1,4 @@
-export function get_logger_action(){
+export function logger_middleware(){
     return (context) => {
         console.log(`New message from ${context.messengerId}`)
     }

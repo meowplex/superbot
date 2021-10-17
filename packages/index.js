@@ -1,11 +1,10 @@
 import mongoose from "mongoose"
-import { vkBot } from "./vk/src/index.js";
-import { tgBot } from "./tg/src/index.js";
+import { vkBot } from "./vk/index.js";
+import { tgBot } from "./tg/index.js";
 
 const main = async () => {
     // connect to db
     let db = await mongoose.connect(process.env.MONGODB_URL);
-    console.log(db)
 
     // start bots
     tgBot.launch().catch(err => console.error('TG Bot launch error:', err));

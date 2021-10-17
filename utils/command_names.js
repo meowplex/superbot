@@ -1,3 +1,3 @@
-export class Command_names {
+export class CommandNames {
     static hello = "hello"
 }
