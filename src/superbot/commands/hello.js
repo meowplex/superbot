@@ -1,10 +1,8 @@
-import { Commands } from "../../../utils/commands.js";
 import { Resp } from "../../../lib/superbot/index.js";
-import { superBot } from "../index.js";
 
-export function hello_command() {
-    superBot.on(Commands.hello, (context) => {
+export function get_hello_command() {
+    return (context) => {
         let res = new Resp("Hello")
         context.reply(res)
-    })
+    }
 }
