@@ -3,7 +3,7 @@ import { superBot } from "../../../superbot/index.js";
 import { Commands } from "../../../../utils/commands.js";
 import { Messengers } from "../../../../utils/messengers.js";
 
-export function get_hello_command()
+export function get_hello_action()
 {
     return async(context) =>
     {
