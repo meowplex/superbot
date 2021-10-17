@@ -1,6 +1,6 @@
 import { VK } from 'vk-io';
 import { HearManager } from '@vk-io/hear';
-import { vk_hello_command } from "./commands/hello.js";
+import { get_hello_action } from "./actions/hello.js";
 
 export const vkBot = new VK({
     token: process.env.VK_TOKEN
@@ -8,9 +8,9 @@ export const vkBot = new VK({
 
 export const hearManager = new HearManager();
 
-export function startVkBot() {
+export function start_vk_bot() {
     vkBot.updates.on('message', hearManager.middleware);
-    hearManager.hear(/^(?:hello|привет)$/i, vk_hello_command)
+    hearManager.hear(/^(?:hello|привет)$/i, get_hello_action())
 
     // start polling
     vkBot.updates.start().catch(err => console.error('VK Bot launch error:', err));
