@@ -5,5 +5,5 @@ import { logger_middleware } from "./middlewares/logger.js"
 
 export const superBot = new SuperBot()
 
-superBot.use(logger_middleware())
-superBot.on(CommandNames.hello, hello_command())
+superBot.use(logger_middleware)
+superBot.on(CommandNames.hello, hello_command)
