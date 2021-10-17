@@ -8,7 +8,6 @@ export const tgBot = new Telegraf({
 export function start_tg_bot()
 {
     // middlewares
-    tgBot.updates.on('message', hearManager.middleware);
     // commands
     tgBot.hears(/^(?:hello|привет)$/i, get_hello_action())
 

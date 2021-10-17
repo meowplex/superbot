@@ -5,5 +5,5 @@ import { get_logger_action } from "./actions/logger.js"
 
 export const super_bot = new SuperBot()
 
-superBot.use(get_logger_action())
-superBot.on(Command_names.hello, get_hello_action())
+super_bot.use(get_logger_action())
+super_bot.on(Command_names.hello, get_hello_action())
