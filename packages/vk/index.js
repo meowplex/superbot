@@ -1,6 +1,7 @@
 import { VK } from 'vk-io';
 import { HearManager } from '@vk-io/hear';
-import { vk_hello_command } from "./commands/hello.js";
+import { hello_command } from "./commands/hello.js";
+import { create_superbot_context_middleware } from './middlewares/create_superbot_context.js';
 
 export const vkBot = new VK({
     token: process.env.VK_TOKEN
@@ -8,6 +9,8 @@ export const vkBot = new VK({
 
 export const hearManager = new HearManager();
 
-vkBot.updates.on('message', hearManager.middleware);
+vkBot.updates.on('message_new', create_superbot_context_middleware)
+vkBot.updates.on('message_new', hearManager.middleware);
 
-hearManager.hear(/^(?:hello|привет)$/i, vk_hello_command)
+
+hearManager.hear(/^(?:hello|привет)$/i, hello_command)
