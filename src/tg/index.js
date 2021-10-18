@@ -11,8 +11,10 @@ import {
 
 const tgBot = new Telegraf(process.env.TG_TOKEN);
 
+//middlewares
 tgBot.use(superbot_context_middleware)
 
+//commands
 tgBot.hears(/^(?:hello|привет)/i, hello_command)
 tgBot.hears(/^(?:sum|сложи)/i, sum_command)
 
