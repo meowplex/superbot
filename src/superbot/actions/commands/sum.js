@@ -10,5 +10,5 @@ export default function sum_command(context) {
                 .map(str => parseInt(str))
         )
     )
-    return res;
+    context.reply(res);
 }
