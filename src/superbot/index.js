@@ -3,7 +3,8 @@ import { CommandNames } from "../../utils/command_names.js";
 
 import {
     hello_command,
-    sum_command
+    sum_command,
+    weather_command
 } from "./actions/commands/index.js"
 
 import {
