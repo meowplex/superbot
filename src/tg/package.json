@@ -2,7 +2,7 @@
   "name": "tg-bot",
   "version": "1.0.0",
   "description": "Telegram version of superbot",
-  "main": "src/index.js",
+  "main": "index.js",
   "license": "MIT",
   "author": {
     "name": "Eduard (trard)",

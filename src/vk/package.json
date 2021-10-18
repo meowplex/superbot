@@ -2,7 +2,7 @@
   "name": "vk-bot",
   "version": "1.0.1",
   "description": "VK version of superbot",
-  "main": "src/index.js",
+  "main": "index.js",
   "license": "MIT",
   "author": {
     "name": "Timofey (xzeldon)",
