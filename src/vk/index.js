@@ -21,7 +21,7 @@ vkBot.updates.on('message_new', superbot_context_middleware)
 vkBot.updates.on('message_new', hearManager.middleware);
 
 //commands
-hearManager.hear(/^(?:hello|привет)$/i, hello_command)
+hearManager.hear(/^(?:hello|привет)/i, hello_command)
 hearManager.hear(/^(?:sum|сложи)/i, sum_command)
 
 export { vkBot as default };
