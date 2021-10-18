@@ -1,4 +1,4 @@
-import { Resp } from "../../../lib/superbot/index.js";
+import { Resp } from "../../../../lib/superbot/index.js";
 //import fetch from "node-fetch";
 
 export function weather_command(context, cityName) {
