@@ -1,3 +1,3 @@
-export default function logger_middleware(context) {
-    console.log(`New message from ${context.messengerId}`)
+export default function logger_middleware(cctx) {
+    console.log(`New message from ${cctx.messengerId}`)
 }
