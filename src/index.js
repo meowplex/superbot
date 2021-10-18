@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
-import { vkBot } from "./vk/index.js";
-import { tgBot } from "./tg/index.js";
+import vkBot from "./vk/index.js";
+import tgBot from "./tg/index.js";
 
 const main = async () => {
     // connect to db
