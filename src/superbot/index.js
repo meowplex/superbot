@@ -4,7 +4,8 @@ import { CommandNames } from "../../utils/command_names.js";
 import {
     hello_command,
     calculate_command,
-    weather_command
+    weather_command,
+    recognize_text_command
 } from "./actions/commands/index.js"
 
 import {
@@ -19,3 +20,4 @@ superBot.use(logger_middleware)
 superBot.on(CommandNames.hello, hello_command)
 superBot.on(CommandNames.weather, weather_command)
 superBot.on(CommandNames.sum, calculate_command)
+superBot.on(CommandNames.recognize_text, recognize_text_command)
