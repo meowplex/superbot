@@ -3,7 +3,7 @@ import { CommandNames } from "../../utils/command_names.js";
 
 import {
     hello_command,
-    sum_command,
+    calculate_command,
     weather_command
 } from "./actions/commands/index.js"
 
@@ -18,4 +18,4 @@ superBot.use(logger_middleware)
 
 superBot.on(CommandNames.hello, hello_command)
 superBot.on(CommandNames.weather, weather_command)
-superBot.on(CommandNames.sum, sum_command)
+superBot.on(CommandNames.sum, calculate_command)
