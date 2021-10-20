@@ -25,8 +25,8 @@ vkBot.updates.on('message_new', hearManager.middleware);
 //commands
 hearManager.hear(/^(?:hello|привет)/i, hello_command)
 hearManager.hear(/^(?:calculate|посчитай) (.*)$/i, calculate_command)
-hearManager.hear(/^(?:weather|погода) (.*)$/, weather_command)
-hearManager.hear(/^распознай$/, recognize_text_command)
+hearManager.hear(/^(?:weather|погода) (.*)$/i, weather_command)
+hearManager.hear(/^распознай$/i, recognize_text_command)
 
 export { vkBot as default };
 
