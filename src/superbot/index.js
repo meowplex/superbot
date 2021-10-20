@@ -17,5 +17,5 @@ export const superBot = new SuperBot()
 superBot.use(logger_middleware)
 
 superBot.on(CommandNames.hello, hello_command)
-superBot.on(CommandNames.weather, weather_command)
+superBot.on(CommandNames.calculate, weather_command)
 superBot.on(CommandNames.sum, calculate_command)
