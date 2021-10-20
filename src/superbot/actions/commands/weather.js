@@ -5,7 +5,7 @@ export default async function weather_command(context, cityName) {
     let weatherData = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.WEATHER_API_KEY}&lang=ru&units=metric`)
     let weatherJson = await weatherData.json();
     if (weatherJson.cod == "404") {
-        let res = new Resp(`Город не найден`)
+        let res = new Resp(`Место не найдено`)
         context.reply(res)
     }
     else {
