@@ -18,7 +18,7 @@ tgBot.use(superbot_context_middleware)
 
 //commands
 tgBot.hears(/^(?:hello|привет)/i, hello_command)
-tgBot.hears(/^(?:sum|сложи)/i, sum_command)
+tgBot.hears(/^(?:sum|сложи) ([0-9 ]*)/i, sum_command)
 tgBot.hears(/^(?:weather|погода) (.*)$/i, weather_command)
 
 export { tgBot as default };
