@@ -7,5 +7,5 @@ export {
     hello_command,
     calculate_command,
     weather_command,
-    recognize_text_command
-}
+    recognize_text_command,
+};

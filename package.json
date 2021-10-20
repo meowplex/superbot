@@ -1,49 +1,49 @@
 {
-  "name": "superbot",
-  "version": "0.0.1",
-  "description": "bot that works on all platforms, in all social networks and messengers",
-  "main": "src/index.js",
-  "repository": "https://github.com/meowplex/superbot",
-  "contributors": [
-    {
-      "name": "Eduard Baturin",
-      "email": "trardone@gmail.com",
-      "url": "http://github.com/Trard"
+    "name": "superbot",
+    "version": "0.0.1",
+    "description": "bot that works on all platforms, in all social networks and messengers",
+    "main": "src/index.js",
+    "repository": "https://github.com/meowplex/superbot",
+    "contributors": [
+        {
+            "name": "Eduard Baturin",
+            "email": "trardone@gmail.com",
+            "url": "http://github.com/Trard"
+        },
+        {
+            "name": "Timofey Ulyanov",
+            "email": "kuthon@vk.com",
+            "url": "https://kuthon.ru"
+        },
+        {
+            "name": "Timofey Gelazoniya",
+            "email": "contact@zeldon.ru",
+            "url": "https://zeldon.ru"
+        }
+    ],
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "devDependencies": {
+        "@babel/core": "^7.15.5",
+        "@babel/preset-env": "^7.15.6",
+        "babel-jest": "^27.2.1",
+        "jest": "^27.2.1",
+        "prettier": "2.4.1"
     },
-    {
-      "name": "Timofey Ulyanov",
-      "email": "kuthon@vk.com",
-      "url": "https://kuthon.ru"
+    "scripts": {
+        "start": "node -r dotenv/config src/index.js",
+        "test": "jest",
+        "pc": "prettier --check .",
+        "pw": "prettier --write ."
     },
-    {
-      "name": "Timofey Gelazoniya",
-      "email": "contact@zeldon.ru",
-      "url": "https://zeldon.ru"
+    "dependencies": {
+        "bigeval": "^3.1.0",
+        "dotenv": "^10.0.0",
+        "mongoose": "^6.0.7",
+        "node-fetch": "^3.0.0",
+        "path": "^0.12.7",
+        "tesseract.js": "^2.1.5",
+        "url": "^0.11.0"
     }
-  ],
-  "license": "MIT",
-  "private": true,
-  "type": "module",
-  "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "babel-jest": "^27.2.1",
-    "jest": "^27.2.1",
-    "prettier": "2.4.1"
-  },
-  "scripts": {
-    "start": "node -r dotenv/config src/index.js",
-    "test": "jest",
-    "pc": "prettier --check .",
-    "pw": "prettier --write ."
-  },
-  "dependencies": {
-    "bigeval": "^3.1.0",
-    "dotenv": "^10.0.0",
-    "mongoose": "^6.0.7",
-    "node-fetch": "^3.0.0",
-    "path": "^0.12.7",
-    "tesseract.js": "^2.1.5",
-    "url": "^0.11.0"
-  }
 }

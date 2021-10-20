@@ -1,5 +1,3 @@
-import logger_middleware from './logger.js';
+import logger_middleware from "./logger.js";
 
-export {
-    logger_middleware
-}
+export { logger_middleware };

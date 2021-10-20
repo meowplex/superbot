@@ -1,5 +1,3 @@
-import superbot_context_middleware from './superbot_context.js';
+import superbot_context_middleware from "./superbot_context.js";
 
-export {
-    superbot_context_middleware
-}
+export { superbot_context_middleware };
