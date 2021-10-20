@@ -33,7 +33,9 @@
   },
   "scripts": {
     "start": "node -r dotenv/config src/index.js",
-    "test": "jest"
+    "test": "jest",
+    "pc": "prettier --check .",
+    "pw": "prettier --write ."
   },
   "dependencies": {
     "bigeval": "^3.1.0",
