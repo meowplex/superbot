@@ -1,0 +1,42 @@
+{
+  "name": "superbot",
+  "version": "0.0.1",
+  "description": "bot that works on all platforms, in all social networks and messengers",
+  "main": "src/index.js",
+  "repository": "https://github.com/meowplex/superbot",
+  "contributors": [
+    {
+      "name": "Eduard Baturin",
+      "email": "trardone@gmail.com",
+      "url": "http://github.com/Trard"
+    },
+    {
+      "name": "Timofey Ulyanov",
+      "email": "kuthon@vk.com",
+      "url": "https://kuthon.ru"
+    },
+    {
+      "name": "Timofey Gelazoniya",
+      "email": "contact@zeldon.ru",
+      "url": "https://zeldon.ru"
+    }
+  ],
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-jest": "^27.2.1",
+    "eslint": "^7.32.0",
+    "jest": "^27.2.1"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.7"
+  }
+}
