@@ -1,4 +1,4 @@
-import { Resp } from "../../../../../lib/core/index.js"
+import { Resp } from "../../../../lib/core/index.js"
 import fetch from "node-fetch";
 
 export default async function weather_command(context, cityName) {

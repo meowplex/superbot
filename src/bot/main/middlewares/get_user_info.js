@@ -1,4 +1,4 @@
-import { Database } from "../../../../database/index.js"
+import { Database } from "../../../database/index.js"
 
 const database = new Database()
 

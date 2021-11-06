@@ -1,5 +1,5 @@
-import superBot from "../../../../bot/main/index.js";
-import { CommandNames } from "../../../../../utils/command_names.js";
+import superBot from "../../../bot/main/index.js";
+import { CommandNames } from "../../../../utils/command_names.js";
 
 export default async function weather_command(context) {
     let cityName = context.$match[1]

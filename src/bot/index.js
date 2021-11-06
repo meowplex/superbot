@@ -1,9 +1,28 @@
-import superBot from './main/index.js'
-import tgBot from './tg/index.js'
-import vkBot from './vk/index.js'
+import vkBot from "./vk/index.js";
+import tgBot from "./tg/index.js";
+import { Database } from "../database/index.js";
 
-export {
-    superBot,
-    tgBot,
-    vkBot
+
+const main = async () => {
+    // connect to db
+    await Database.connect(process.env.MONGODB_URL)
+
+    // start bots
+    tgBot.launch().catch(err => console.error('TG Bot launch error:', err));
+    console.log('TG Bot is up and running');
+
+    vkBot.updates.start().catch(err => console.error('VK Bot launch error:', err));
+    console.log('VK Bot is up and running');
+
+    // Enable graceful stop
+    process.once('SIGINT', () => {
+        tgBot.stop('SIGINT')
+        vkBot.updates.stop()
+    })
+    process.once('SIGTERM', () => {
+        tgBot.stop('SIGTERM')
+        vkBot.updates.stop()
+    })
 }
+
+main()

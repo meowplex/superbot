@@ -1,5 +1,5 @@
-import { Resp } from "../../../../../lib/core/index.js"
-import { Database } from "../../../../database/index.js";
+import { Resp } from "../../../../lib/core/index.js"
+import { Database } from "../../../database/index.js";
 
 const database = new Database()
 

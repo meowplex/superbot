@@ -7,11 +7,11 @@ import {
     weather_command,
     recognize_text_command,
     nickname_command
-} from "./actions/commands/index.js";
+} from "./commands/index.js";
 
 import {
     superbot_context_middleware
-} from './actions/middlewares/index.js';
+} from './middlewares/index.js';
 
 const vkBot = new VK({
     token: process.env.VK_TOKEN

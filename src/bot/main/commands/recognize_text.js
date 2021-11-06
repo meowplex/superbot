@@ -1,4 +1,4 @@
-import { Resp } from "../../../../../lib/core/index.js"
+import { Resp } from "../../../../lib/core/index.js"
 import { createWorker } from "tesseract.js"
 
 export default async function recognize_text_command(cctx, image) {
