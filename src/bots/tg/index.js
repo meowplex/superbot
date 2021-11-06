@@ -3,7 +3,8 @@ import { Telegraf } from 'telegraf';
 import {
     hello_command,
     calculate_command,
-    weather_command
+    weather_command,
+    nickname_command
 } from "./src/commands/index.js";
 
 import {
@@ -20,6 +21,7 @@ tgBot.use(superbot_context_middleware)
 tgBot.hears(/^(?:hello|привет)/i, hello_command)
 tgBot.hears(/^(?:calculate|посчитай) (.*)$/i, calculate_command)
 tgBot.hears(/^(?:weather|погода) (.*)$/i, weather_command)
+tgBot.hears(/^(?:nickname|никнейм)(?: ([\s\S]+?))?$/i, nickname_command)
 
 export { tgBot as default };
 

@@ -3,4 +3,5 @@ export class CommandNames {
     static weather = "weather"
     static calculate = "calculate"
     static recognize_text = "recognize_text"
+    static nickname = "nickname"
 }

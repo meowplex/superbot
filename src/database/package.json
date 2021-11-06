@@ -1,0 +1,10 @@
+{
+  "name": "@superbot/database",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^6.0.12"
+  }
+}
