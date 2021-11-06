@@ -5,11 +5,11 @@ import {
     calculate_command,
     weather_command,
     nickname_command
-} from "./src/commands/index.js.js";
+} from "./actions/commands/index.js";
 
 import {
     superbot_context_middleware
-} from './src/middlewares/index.js.js';
+} from './actions/middlewares/index.js';
 
 
 const tgBot = new Telegraf(process.env.TG_TOKEN);
