@@ -1,5 +1,5 @@
-import vkBot from "./packages/bots/vk/index.js.js.js";
-import tgBot from "./packages/bots/tg/index.js.js.js";
+import vkBot from "./packages/bots/vk/index.js";
+import tgBot from "./packages/bots/tg/index.jы";
 import { Database } from "./database/index.js";
 
 
