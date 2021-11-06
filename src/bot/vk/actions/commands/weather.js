@@ -1,4 +1,4 @@
-import { superBot } from "../../../../bots/bot/index.js";
+import { superBot } from "../../../../bots/bot/index.js.js";
 import { CommandNames } from "../../../../../utils/command_names.js";
 
 export default async function weather_command(context) {
