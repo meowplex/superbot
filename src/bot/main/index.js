@@ -7,12 +7,12 @@ import {
     weather_command,
     recognize_text_command,
     nickname_command
-} from "./main/src/commands/index.js.js"
+} from "./actions/commands/index.js"
 
 import {
     logger_middleware,
     get_user_info_middleware
-} from "./main/src/middlewares/index.js.js"
+} from "./actions/middlewares/index.js"
 
 
 const superBot = new SuperBot()

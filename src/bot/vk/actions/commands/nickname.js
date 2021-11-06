@@ -1,4 +1,4 @@
-import { superBot } from "../../../../bot/main/index.js";
+import superBot from "../../../../bot/main/index.js";
 import { CommandNames } from "../../../../../utils/command_names.js";
 
 
