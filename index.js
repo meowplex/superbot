@@ -1,6 +1,6 @@
-import vkBot from "./src/bots/vk/index.js";
-import tgBot from "./src/bots/tg/index.js";
-import { Database } from "./src/database/index.js";
+import vkBot from "./packages/bots/vk/index.js.js";
+import tgBot from "./packages/bots/tg/index.js.js";
+import { Database } from "./packages/database/index.js";
 
 
 const main = async () => {

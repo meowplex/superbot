@@ -7,11 +7,11 @@ import {
     weather_command,
     recognize_text_command,
     nickname_command
-} from "./src/commands/index.js";
+} from "./actions/commands/index.js";
 
 import {
     superbot_context_middleware
-} from './src/middlewares/index.js';
+} from './actions/middlewares/index.js';
 
 const vkBot = new VK({
     token: process.env.VK_TOKEN
@@ -31,4 +31,3 @@ hearManager.hear(/^распознай$/i, recognize_text_command)
 hearManager.hear(/^(?:nickname|никнейм)(?: ([\s\S]+?))?$/i, nickname_command)
 
 export { vkBot as default };
-
