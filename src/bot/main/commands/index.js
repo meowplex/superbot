@@ -3,7 +3,7 @@ import calculate_command from "./calculate.js";
 import weather_command from "./weather.js";
 import recognize_text_command from "./recognize_text.js";
 import nickname_command from "./nickname.js";
-import school_quiz_command from "./school_quiz.js"
+import school_quiz_command from "./quiz.js"
 
 export {
     hello_command,
