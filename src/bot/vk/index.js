@@ -1,5 +1,6 @@
 import { VK } from 'vk-io';
 import { HearManager } from '@vk-io/hear';
+import { RedisSession } from "vk-io-session-redis";
 
 import {
     hello_command,
@@ -19,10 +20,12 @@ const vkBot = new VK({
 });
 
 const hearManager = new HearManager();
+const redisSession = new RedisSession();
 
 //middlewares
 vkBot.updates.on('message_new', superbot_context_middleware)
 vkBot.updates.on('message_new', hearManager.middleware);
+vkBot.updates.use(redisSession.middleware());
 
 //commands
 hearManager.hear(/^(?:hello|привет)/i, hello_command)
