@@ -26,6 +26,6 @@ superBot.on(CommandNames.weather, weather_command)
 superBot.on(CommandNames.sum, calculate_command)
 superBot.on(CommandNames.recognize_text, recognize_text_command)
 superBot.on(CommandNames.nickname, nickname_command)
-superBot.on(CommandNames.school_quiz_command, school_quiz_command)
+superBot.on(CommandNames.school_quiz, school_quiz_command)
 
 export { superBot as default };

@@ -4,5 +4,5 @@ export class CommandNames {
     static calculate = "calculate"
     static recognize_text = "recognize_text"
     static nickname = "nickname"
-    static school_quiz_command = "school_quiz_command"
+    static school_quiz = "school_quiz"
 }
