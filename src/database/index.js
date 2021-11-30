@@ -8,7 +8,6 @@ const UsersSchema = mongoose.Schema({
 
 const UsersModel = mongoose.model('UsersModel', UsersSchema);
 
-
 export class Database {
 
     /**
